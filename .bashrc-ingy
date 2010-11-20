@@ -1,7 +1,9 @@
 path-prefix $HOME/perl5/perlbrew/perls/current/bin
 path-suffix /Users/ingy/.cabal/bin
-# path-suffix $HOME/src/kwiki/trunk/bin
 
+export PERL_CPANM_OPT="--sudo --mirror file:///home/ingy/perl5/minicpan"
+
+# path-suffix $HOME/src/kwiki/trunk/bin
 # export TZ='America/Los_Angeles'
 
 export SCREENUSERS="ingy pair"
@@ -18,6 +20,7 @@ alias tail=multitail
 alias ysh-xs='ysh -MYAML::XS'
 alias ysh-syck='ysh -MYAML::Syck'
 alias ysh-tiny='ysh -MYAML::Tiny'
+alias AYC-STATUS='aycabtu --all --status --quiet'
 
 # Handy for making sense of failing data-oriented tests.
 tdiff() {
