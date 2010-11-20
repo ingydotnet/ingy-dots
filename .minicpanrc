@@ -1,0 +1,3 @@
+local: ~/perl5/minicpan/
+remote: http://cpan.llarian.net/
+exact_mirror: 1
