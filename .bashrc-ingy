@@ -20,7 +20,7 @@ alias tail=multitail
 alias ysh-xs='ysh -MYAML::XS'
 alias ysh-syck='ysh -MYAML::Syck'
 alias ysh-tiny='ysh -MYAML::Tiny'
-alias AYC-STATUS='aycabtu --all --status --quiet'
+alias AYC-STATUS='(cd ~/src; aycabtu --all --status --quiet)'
 
 # Handy for making sense of failing data-oriented tests.
 tdiff() {
