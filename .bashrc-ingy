@@ -2,6 +2,7 @@ path-prefix $HOME/perl5/perlbrew/perls/current/bin
 path-suffix /Users/ingy/.cabal/bin
 
 export PERL_CPANM_OPT="--sudo --mirror file:///home/ingy/perl5/minicpan"
+export AYCABTU_DEFAULT_OPTS="--all --status --quiet"
 
 # path-suffix $HOME/src/kwiki/trunk/bin
 # export TZ='America/Los_Angeles'
