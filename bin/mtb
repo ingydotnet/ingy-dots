@@ -14,6 +14,7 @@ sub run {
     system($cmd) == 0 or die "cmd failed: $!";
 }
 
+system "make purge";
 run "perl Makefile.PL";
 run "make manifest";
 run "make dist";
