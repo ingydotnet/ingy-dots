@@ -1,5 +1,5 @@
-path-prefix $HOME/perl5/perlbrew/perls/current/bin
-path-suffix /Users/ingy/.cabal/bin
+path-prepend $HOME/perl5/perlbrew/perls/current/bin
+path-append /Users/ingy/.cabal/bin
 
 export PERL_CPANM_OPT="--sudo --mirror file:///home/ingy/perl5/minicpan"
 export AYCABTU_DEFAULT_OPTS="--all --status --quiet"
@@ -16,7 +16,6 @@ export GIT_COMMITTER_NAME='Ingy dot Net'
 export GIT_COMMITTER_EMAIL='ingy@ingy.net'
 
 alias N='cd ~/src/notes'
-alias tail=multitail
 
 alias ysh-xs='ysh -MYAML::XS'
 alias ysh-syck='ysh -MYAML::Syck'
