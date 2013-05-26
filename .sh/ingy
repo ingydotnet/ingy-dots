@@ -1,5 +1,6 @@
 ...path-prepend $HOME/perl5/perlbrew/perls/current/bin
 ...path-append $HOME/.cabal/bin
+...path-prepend $HOME/rakudo-star-2013.02/install/bin
 
 export PERL_CPANM_OPT="--sudo"  # --mirror file:///home/ingy/perl5/minicpan"
 export AYCABTU_DEFAULT_OPTS="--all --status --quiet"
@@ -23,3 +24,5 @@ tdiff() {
     | perl -ne 'print if /^not ok/ or s/^# //' \
     | vim - +'set filetype=diff'
 }
+
+TMUXESC=a
