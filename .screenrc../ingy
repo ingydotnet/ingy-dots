@@ -1,2 +1,0 @@
-backtick 1 0 0 screen-status
-hardstatus string "%{ky}%1` %{k${SCREENCOLOR}}%H: %-Lw%{= k${SCREENCOLOR}}%50>%n%f* %t%{-}%+Lw%< %>"

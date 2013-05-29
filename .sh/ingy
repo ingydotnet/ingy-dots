@@ -1,4 +1,5 @@
-...path-prepend $HOME/perl5/perlbrew/perls/current/bin
+export LANG="C"
+
 ...path-append $HOME/.cabal/bin
 ...path-prepend $HOME/rakudo-star-2013.02/install/bin
 
@@ -26,3 +27,10 @@ tdiff() {
 }
 
 TMUXESC=a
+
+alias ysh-xs='ysh -MYAML::XS'
+alias ysh-syck='ysh -MYAML::Syck'
+alias ysh-tiny='ysh -MYAML::Tiny'
+alias allperl='export PERL5LIB=`ls -d ~/src/*/lib|perl -pe'\''chomp;$_.=":"'\''`'
+alias AYC-STATUS='(cd ~/src; aycabtu --all --status --quiet)'
+
