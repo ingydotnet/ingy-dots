@@ -3,7 +3,7 @@ export LANG="C"
 ...path-append $HOME/.cabal/bin
 ...path-prepend $HOME/rakudo-star-2013.02/install/bin
 
-# export PERL_CPANM_OPT="--sudo"  # --mirror file:///home/ingy/perl5/minicpan"
+export PERL_CPANM_OPT_XXX="--mirror file:///home/ingy/local/share/minicpan"
 export AYCABTU_DEFAULT_OPTS="--all --status --quiet"
 
 export SCREENUSERS="ingy pair"

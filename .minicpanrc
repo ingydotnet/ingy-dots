@@ -1,8 +1,8 @@
 local: ~/local/share/minicpan/
 exact_mirror: 1
-# remote: http://cpan.llarian.net/
+remote: http://cpan.llarian.net/
 # remote: http://cpan.mirrors.ilisys.com.au/
 # remote: http://cpan.nctu.edu.tw/
-remote: http://cpan.schools.net.au/
+# remote: http://cpan.schools.net.au/
 # remote: http://cpan.coreix.net/
 # remote: http://cpan.cpantesters.org/
