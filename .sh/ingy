@@ -1,36 +1,15 @@
 export LANG="C"
 
-...path-append $HOME/.cabal/bin
-...path-prepend $HOME/rakudo-star-2013.02/install/bin
-
-export PERL_CPANM_OPT_XXX="--mirror file:///home/ingy/local/share/minicpan"
-export AYCABTU_DEFAULT_OPTS="--all --status --quiet"
-
-export SCREENUSERS="ingy pair"
-export SCREENCOLOR=g
-
 export GIT_AUTHOR_NAME='Ingy döt Net'
 export GIT_AUTHOR_EMAIL='ingy@ingy.net'
 export GIT_COMMITTER_NAME='Ingy döt Net'
 export GIT_COMMITTER_EMAIL='ingy@ingy.net'
 
+export VIM_PATHOGEN_DISABLE='syntastic quickfixsigns'
+
 export PKG_ROOT=$HOME/src/pkg
-
-alias AYC-STATUS='(cd ~/src; aycabtu --all --status --quiet)'
-alias allperl='export PERL5LIB=`ls -d ~/src/*/lib|perl -pe'\''chomp;$_.=":"'\''`'
-
-# Handy for making sense of failing data-oriented tests.
-tdiff() {
-    prove -lv "$@" \
-    | perl -ne 'print if /^not ok/ or s/^# //' \
-    | vim - +'set filetype=diff'
-}
-
-TMUXESC=a
+export TMUXESC=a
 
 alias ysh-xs='ysh -MYAML::XS'
 alias ysh-syck='ysh -MYAML::Syck'
 alias ysh-tiny='ysh -MYAML::Tiny'
-alias allperl='export PERL5LIB=`ls -d ~/src/*/lib|perl -pe'\''chomp;$_.=":"'\''`'
-alias AYC-STATUS='(cd ~/src; aycabtu --all --status --quiet)'
-
